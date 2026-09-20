@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3: Thị trường lao động Kĩ thuật, Công nghệ tại Việt Nam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-indigo-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-xl font-bold uppercase tracking-wide">Công Nghệ / Hướng Nghề</h1>
+                <p class="text-indigo-200 text-sm">BÀI 3: THỊ TRƯỜNG LAO ĐỘNG KĨ THUẬT, CÔNG NGHỆ TẠI VIỆT NAM (3 tiết)</p>
+            </div>
+            <div class="flex bg-indigo-800 p-1 rounded-lg border border-indigo-600">
+                <button id="tab-theory-btn" onclick="switchTab('theory')" class="px-4 py-2 rounded-md font-medium text-sm transition-all bg-white text-indigo-900 shadow">
+                    <i class="fa-solid fa-book-open mr-2"></i>Kiến Thức Trọng Tâm
+                </button>
+                <button id="tab-quiz-btn" onclick="switchTab('quiz')" class="px-4 py-2 rounded-md font-medium text-sm transition-all text-indigo-200 hover:text-white">
+                    <i class="fa-solid fa-pen-to-square mr-2"></i>Trắc Nghiệm
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- TAB 1: KIẾN THỨC TRỌNG TÂM -->
+        <section id="tab-theory" class="space-y-6">
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-indigo-900 border-b pb-3 mb-6 flex items-center">
+                    <i class="fa-solid fa-bookmark text-indigo-600 mr-3"></i>I. NỘI DUNG TRỌNG TÂM
+                </h2>
+
+                <div class="space-y-8">
+                    <!-- 1. Khái niệm -->
+                    <div class="bg-indigo-50/50 p-5 rounded-lg border border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-800 mb-2 flex items-center">
+                            <span class="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2">1</span>
+                            Khái niệm thị trường lao động:
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 ml-2">
+                            <li>Là thị trường trao đổi hàng hoá sức lao động giữa người lao động (bên bán) và người sử dụng lao động (bên mua) dựa trên sự thoả thuận về tiền lương, điều kiện làm việc,...</li>
+                            <li>Sức lao động là toàn bộ thể lực và trí lực của con người được vận dụng trong quá trình lao động.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Các yếu tố ảnh hưởng -->
+                    <div>
+                        <h3 class="text-lg font-bold text-indigo-800 mb-3 flex items-center">
+                            <span class="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2">2</span>
+                            Các yếu tố ảnh hưởng đến thị trường lao động:
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                                <span class="font-semibold text-slate-900">Sự phát triển của khoa học, công nghệ:</span> Đòi hỏi trình độ chuyên môn, kĩ năng cao hơn, giảm cầu lao động chân tay.
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                                <span class="font-semibold text-slate-900">Sự chuyển dịch cơ cấu:</span> Chuyển dịch giữa các ngành, vùng kinh tế làm thay đổi nhu cầu lao động.
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                                <span class="font-semibold text-slate-900">Nhu cầu lao động (Cầu lao động):</span> Phụ thuộc vào sự phát triển kinh tế – xã hội và nhu cầu sản xuất, tiêu dùng.
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                                <span class="font-semibold text-slate-900">Nguồn cung lao động (Cung lao động):</span> Số lượng, chất lượng, cơ cấu nguồn nhân lực.
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 md:col-span-2">
+                                <span class="font-semibold text-slate-900">Chính sách của Nhà nước:</span> Tác động tích cực thông qua các quy hoạch, chính sách khuyến khích, đầu tư.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Vai trò -->
+                    <div class="bg-indigo-50/50 p-5 rounded-lg border border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-800 mb-2 flex items-center">
+                            <span class="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2">3</span>
+                            Vai trò của thị trường lao động trong định hướng nghề nghiệp:
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 ml-2">
+                            <li>Cung cấp thông tin thực tế về nhu cầu tuyển dụng, các ngành nghề có tiềm năng, yêu cầu về kĩ năng, mức lương,...</li>
+                            <li>Giúp học sinh đối chiếu với sở thích, năng lực bản thân để đưa ra quyết định chọn nghề đúng đắn và lập kế hoạch học tập phù hợp.</li>
+                            <li>Giúp các cơ sở đào tạo phát triển chương trình đáp ứng đúng nhu cầu xã hội.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Vấn đề cơ bản -->
+                    <div>
+                        <h3 class="text-lg font-bold text-indigo-800 mb-2 flex items-center">
+                            <span class="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2">4</span>
+                            Những vấn đề cơ bản của thị trường lao động Việt Nam hiện nay:
+                        </h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700 ml-2">
+                            <li>Chất lượng lao động còn thấp, phân bổ nguồn lực chưa đồng đều (tập trung nhiều ở nông thôn, khan hiếm lao động trình độ cao).</li>
+                            <li>Mất cân đối cung – cầu: Xu hướng Cung lao động lớn hơn Cầu lao động, tuy nhiên cung lại chưa đáp ứng được cầu do chất lượng thấp.</li>
+                            <li>Xu hướng tuyển dụng ưu tiên người lao động đã qua đào tạo, có kinh nghiệm, ngoại ngữ, kĩ năng số/CNTT và khả năng tự học.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 5. Quy trình tìm kiếm thông tin -->
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                        <h3 class="text-lg font-bold text-indigo-800 mb-4 flex items-center">
+                            <span class="bg-indigo-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-2">5</span>
+                            Quy trình tìm kiếm thông tin thị trường lao động (4 bước):
+                        </h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                            <div class="bg-white p-3 rounded border border-slate-200">
+                                <span class="font-bold text-indigo-600 block mb-1">Bước 1</span>
+                                <span class="text-sm font-semibold block text-slate-800 mb-1">Xác định mục tiêu tìm kiếm</span>
+                                <span class="text-xs text-slate-500">(đặt câu hỏi tìm kiếm chính và chi tiết)</span>
+                            </div>
+                            <div class="bg-white p-3 rounded border border-slate-200">
+                                <span class="font-bold text-indigo-600 block mb-1">Bước 2</span>
+                                <span class="text-sm font-semibold block text-slate-800 mb-1">Xác định nguồn thông tin</span>
+                                <span class="text-xs text-slate-500">(báo cáo thống kê, website tuyển dụng, thông tin tuyển sinh,...)</span>
+                            </div>
+                            <div class="bg-white p-3 rounded border border-slate-200">
+                                <span class="font-bold text-indigo-600 block mb-1">Bước 3</span>
+                                <span class="text-sm font-semibold block text-slate-800 mb-1">Xác định công cụ tìm kiếm</span>
+                                <span class="text-xs text-slate-500">(Google, Bing, ChatGPT,...)</span>
+                            </div>
+                            <div class="bg-white p-3 rounded border border-slate-200">
+                                <span class="font-bold text-indigo-600 block mb-1">Bước 4</span>
+                                <span class="text-sm font-semibold block text-slate-800 mb-1">Tiến hành tìm kiếm & tổng hợp</span>
+                                <span class="text-xs text-slate-500">(về xu hướng, nhu cầu, cơ sở đào tạo, mức lương)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: CÂU HỎI TRẮC NGHIỆM -->
+        <section id="tab-quiz" class="hidden space-y-6">
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+                <div class="flex justify-between items-center border-b pb-4 mb-6">
+                    <h2 class="text-2xl font-bold text-indigo-900 flex items-center">
+                        <i class="fa-solid fa-list-check text-indigo-600 mr-3"></i>II. BỘ CÂU HỎI TRẮC NGHIỆM
+                    </h2>
+                    <button onclick="resetQuiz()" class="text-sm text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                        <i class="fa-solid fa-rotate-right mr-1"></i> Làm lại
+                    </button>
+                </div>
+
+                <!-- Form Trắc nghiệm -->
+                <form id="quiz-form" class="space-y-8">
+                    
+                    <!-- PHẦN 1 -->
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-4 pb-2 border-b border-slate-100 flex items-center">
+                            <span class="bg-slate-800 text-white text-xs px-2.5 py-1 rounded mr-2">PHẦN 1</span> 
+                            TRẮC NGHIỆM NHIỀU LỰA CHỌN (Chọn 01 đáp án đúng nhất)
+                        </h3>
+
+                        <!-- Câu 1 -->
+                        <div class="mb-6 p-4 rounded-lg bg-slate-50 border border-slate-200" id="q1-box">
+                            <p class="font-semibold text-slate-900 mb-3">Câu 1. Trong thị trường lao động, đối tượng nào được coi là "bên bán" và hàng hóa được trao đổi ở đây là gì?</p>
+                            <div class="space-y-2 pl-2">
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q1" value="A" class="mt-1 mr-3 text-indigo-600">
+                                    <span>A. Người sử dụng lao động là bên bán; hàng hóa là máy móc, thiết bị.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q1" value="B" class="mt-1 mr-3 text-indigo-600">
+                                    <span>B. Người lao động là bên bán; hàng hóa là sức lao động (thể lực và trí lực).</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q1" value="C" class="mt-1 mr-3 text-indigo-600">
+                                    <span>C. Các cơ sở đào tạo là bên bán; hàng hóa là bằng cấp, chứng chỉ.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q1" value="D" class="mt-1 mr-3 text-indigo-600">
+                                    <span>D. Nhà nước là bên bán; hàng hóa là chính sách việc làm.</span>
+                                </label>
+                            </div>
+                            <div id="explain-q1" class="hidden mt-3 p-3 bg-amber-50 rounded text-sm text-amber-900 border border-amber-200"></div>
+                        </div>
+
+                        <!-- Câu 2 -->
+                        <div class="mb-6 p-4 rounded-lg bg-slate-50 border border-slate-200" id="q2-box">
+                            <p class="font-semibold text-slate-900 mb-3">Câu 2. Yếu tố nào sau đây đẩy nhanh sự chuyển dịch cơ cấu nền kinh tế và đòi hỏi người lao động phải nâng cao năng lực, kĩ năng giao tiếp, tư duy sáng tạo?</p>
+                            <div class="space-y-2 pl-2">
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q2" value="A" class="mt-1 mr-3 text-indigo-600">
+                                    <span>A. Nguồn cung lao động dồi dào.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q2" value="B" class="mt-1 mr-3 text-indigo-600">
+                                    <span>B. Sự phát triển của khoa học, công nghệ.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q2" value="C" class="mt-1 mr-3 text-indigo-600">
+                                    <span>C. Sự gia tăng dân số ở khu vực nông thôn.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q2" value="D" class="mt-1 mr-3 text-indigo-600">
+                                    <span>D. Bối cảnh gia đình người lao động.</span>
+                                </label>
+                            </div>
+                            <div id="explain-q2" class="hidden mt-3 p-3 bg-amber-50 rounded text-sm text-amber-900 border border-amber-200"></div>
+                        </div>
+
+                        <!-- Câu 3 -->
+                        <div class="mb-6 p-4 rounded-lg bg-slate-50 border border-slate-200" id="q3-box">
+                            <p class="font-semibold text-slate-900 mb-3">Câu 3. Phát biểu nào sau đây thể hiện vai trò của thị trường lao động đối với học sinh trong việc định hướng nghề nghiệp?</p>
+                            <div class="space-y-2 pl-2">
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q3" value="A" class="mt-1 mr-3 text-indigo-600">
+                                    <span>A. Bắt buộc học sinh phải đăng ký học các ngành thuộc lĩnh vực nông nghiệp.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q3" value="B" class="mt-1 mr-3 text-indigo-600">
+                                    <span>B. Cung cấp thông tin về nhu cầu tuyển dụng, kĩ năng thiết yếu và mức lương để học sinh làm căn cứ chọn nghề phù hợp.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q3" value="C" class="mt-1 mr-3 text-indigo-600">
+                                    <span>C. Quyết định thay cho học sinh về việc chọn trường học sau khi tốt nghiệp THCS.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q3" value="D" class="mt-1 mr-3 text-indigo-600">
+                                    <span>D. Đảm bảo tất cả người học đều có việc làm ngay sau khi ra trường.</span>
+                                </label>
+                            </div>
+                            <div id="explain-q3" class="hidden mt-3 p-3 bg-amber-50 rounded text-sm text-amber-900 border border-amber-200"></div>
+                        </div>
+
+                        <!-- Câu 4 -->
+                        <div class="mb-6 p-4 rounded-lg bg-slate-50 border border-slate-200" id="q4-box">
+                            <p class="font-semibold text-slate-900 mb-3">Câu 4. Thực trạng nào dưới đây phản ánh một trong những vấn đề cơ bản của thị trường lao động tại Việt Nam hiện nay?</p>
+                            <div class="space-y-2 pl-2">
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q4" value="A" class="mt-1 mr-3 text-indigo-600">
+                                    <span>A. Chất lượng lao động đã đạt mức rất cao, đáp ứng đầy đủ mọi doanh nghiệp.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q4" value="B" class="mt-1 mr-3 text-indigo-600">
+                                    <span>B. Nguồn cung lao động nhỏ hơn rất nhiều so với nhu cầu tuyển dụng của doanh nghiệp.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q4" value="C" class="mt-1 mr-3 text-indigo-600">
+                                    <span>C. Xu hướng cung lao động lớn hơn cầu lao động, đồng thời khan hiếm lao động có trình độ chuyên môn kĩ thuật cao.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q4" value="D" class="mt-1 mr-3 text-indigo-600">
+                                    <span>D. Lực lượng lao động phân bố chủ yếu và đồng đều tại các khu công nghiệp lớn ở thành thị.</span>
+                                </label>
+                            </div>
+                            <div id="explain-q4" class="hidden mt-3 p-3 bg-amber-50 rounded text-sm text-amber-900 border border-amber-200"></div>
+                        </div>
+
+                        <!-- Câu 5 -->
+                        <div class="mb-6 p-4 rounded-lg bg-slate-50 border border-slate-200" id="q5-box">
+                            <p class="font-semibold text-slate-900 mb-3">Câu 5. Theo quy trình tìm kiếm thông tin về thị trường lao động, việc đặt ra câu hỏi "Mức lương trung bình của kĩ sư phần mềm hiện nay là bao nhiêu?" thuộc bước nào?</p>
+                            <div class="space-y-2 pl-2">
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q5" value="A" class="mt-1 mr-3 text-indigo-600">
+                                    <span>A. Bước 1: Xác định mục tiêu tìm kiếm.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q5" value="B" class="mt-1 mr-3 text-indigo-600">
+                                    <span>B. Bước 2: Xác định nguồn thông tin.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q5" value="C" class="mt-1 mr-3 text-indigo-600">
+                                    <span>C. Bước 3: Xác định công cụ tìm kiếm.</span>
+                                </label>
+                                <label class="flex items-start p-2 rounded hover:bg-white cursor-pointer transition">
+                                    <input type="radio" name="q5" value="D" class="mt-1 mr-3 text-indigo-600">
+                                    <span>D. Bước 4: Tiến hành tìm kiếm.</span>
+                                </label>
+                            </div>
+                            <div id="explain-q5" class="hidden mt-3 p-3 bg-amber-50 rounded text-sm text-amber-900 border border-amber-200"></div>
+                        </div>
+                    </div>
+
+                    <!-- PHẦN 2 -->
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-4 pb-2 border-b border-slate-100 flex items-center">
+                            <span class="bg-slate-800 text-white text-xs px-2.5 py-1 rounded mr-2">PHẦN 2</span> 
+                            TRẮC NGHIỆM ĐÚNG/SAI (Chọn Đúng hoặc Sai cho mỗi nhận định)
+                        </h3>
+
+                        <div class="p-4 rounded-lg bg-slate-50 border border-slate-200" id="q6-box">
+                            <p class="font-semibold text-slate-900 mb-2">Câu 6. Đọc đoạn thông tin sau:</p>
+                            <blockquote class="italic text-slate-700 bg-white p-3 rounded border-l-4 border-indigo-500 mb-4 text-sm">
+                                "Hiện nay, cuộc cách mạng công nghiệp 4.0 làm xuất hiện nhiều ngành nghề mới thuộc lĩnh vực kĩ thuật, công nghệ như Trí tuệ nhân tạo (AI), Khoa học dữ liệu, Tự động hóa. Các doanh nghiệp tuyển dụng không chỉ yêu cầu ứng viên có bằng cấp chuyên môn mà còn đòi hỏi kĩ năng ngoại ngữ, tin học và khả năng tự học để thích ứng với sự thay đổi liên tục của công nghệ."
+                            </blockquote>
+
+                            <div class="space-y-4">
+                                <!-- Option a -->
+                                <div class="p-3 bg-white rounded border border-slate-200">
+                                    <p class="text-sm font-medium text-slate-800 mb-2">a) Thị trường lao động lĩnh vực kĩ thuật, công nghệ hiện nay có yêu cầu ngày càng cao đối với chất lượng nguồn nhân lực.</p>
+                                    <div class="flex gap-4">
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_a" value="ĐÚNG" class="mr-1 text-indigo-600"> Đúng</label>
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_a" value="SAI" class="mr-1 text-indigo-600"> Sai</label>
+                                    </div>
+                                    <div id="explain-q6_a" class="hidden mt-2 p-2 bg-amber-50 rounded text-xs text-amber-900 border border-amber-200"></div>
+                                </div>
+
+                                <!-- Option b -->
+                                <div class="p-3 bg-white rounded border border-slate-200">
+                                    <p class="text-sm font-medium text-slate-800 mb-2">b) Người lao động chỉ cần đáp ứng đúng kiến thức trong bằng cấp đào tạo ban đầu là có thể làm việc bền vững, không cần cập nhật kĩ năng mới.</p>
+                                    <div class="flex gap-4">
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_b" value="ĐÚNG" class="mr-1 text-indigo-600"> Đúng</label>
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_b" value="SAI" class="mr-1 text-indigo-600"> Sai</label>
+                                    </div>
+                                    <div id="explain-q6_b" class="hidden mt-2 p-2 bg-amber-50 rounded text-xs text-amber-900 border border-amber-200"></div>
+                                </div>
+
+                                <!-- Option c -->
+                                <div class="p-3 bg-white rounded border border-slate-200">
+                                    <p class="text-sm font-medium text-slate-800 mb-2">c) Việc nắm bắt các xu hướng ngành nghề mới giúp học sinh có căn cứ chọn ngành học phù hợp với nhu cầu thực tế của xã hội.</p>
+                                    <div class="flex gap-4">
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_c" value="ĐÚNG" class="mr-1 text-indigo-600"> Đúng</label>
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_c" value="SAI" class="mr-1 text-indigo-600"> Sai</label>
+                                    </div>
+                                    <div id="explain-q6_c" class="hidden mt-2 p-2 bg-amber-50 rounded text-xs text-amber-900 border border-amber-200"></div>
+                                </div>
+
+                                <!-- Option d -->
+                                <div class="p-3 bg-white rounded border border-slate-200">
+                                    <p class="text-sm font-medium text-slate-800 mb-2">d) Xu hướng tuyển dụng hiện nay ưu tiên người lao động có khả năng tự học, thành thạo ngoại ngữ và công nghệ thông tin.</p>
+                                    <div class="flex gap-4">
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_d" value="ĐÚNG" class="mr-1 text-indigo-600"> Đúng</label>
+                                        <label class="flex items-center text-sm cursor-pointer"><input type="radio" name="q6_d" value="SAI" class="mr-1 text-indigo-600"> Sai</label>
+                                    </div>
+                                    <div id="explain-q6_d" class="hidden mt-2 p-2 bg-amber-50 rounded text-xs text-amber-900 border border-amber-200"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút Nộp Bài -->
+                    <div class="pt-4 border-t border-slate-200">
+                        <button type="button" onclick="submitQuiz()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Nộp Bài & Xem Đáp Án
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Kết Quả -->
+                <div id="result-card" class="hidden mt-6 p-6 rounded-xl bg-slate-900 text-white text-center space-y-4">
+                    <h3 class="text-xl font-bold">KẾT QUẢ BÀI LÀM</h3>
+                    <div class="text-4xl font-extrabold text-indigo-400" id="score-text">0 / 9</div>
+                    <p class="text-slate-300 text-sm" id="feedback-text"></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Chuyển Tab
+        function switchTab(tab) {
+            const theoryTab = document.getElementById('tab-theory');
+            const quizTab = document.getElementById('tab-quiz');
+            const theoryBtn = document.getElementById('tab-theory-btn');
+            const quizBtn = document.getElementById('tab-quiz-btn');
+
+            if (tab === 'theory') {
+                theoryTab.classList.remove('hidden');
+                quizTab.classList.add('hidden');
+                theoryBtn.className = "px-4 py-2 rounded-md font-medium text-sm transition-all bg-white text-indigo-900 shadow";
+                quizBtn.className = "px-4 py-2 rounded-md font-medium text-sm transition-all text-indigo-200 hover:text-white";
+            } else {
+                quizTab.classList.remove('hidden');
+                theoryTab.classList.add('hidden');
+                quizBtn.className = "px-4 py-2 rounded-md font-medium text-sm transition-all bg-white text-indigo-900 shadow";
+                theoryBtn.className = "px-4 py-2 rounded-md font-medium text-sm transition-all text-indigo-200 hover:text-white";
+            }
+        }
+
+        // Dữ liệu đáp án & giải thích từ tài liệu
+        const answers = {
+            q1: { ans: "B", exp: "Giải thích: Theo khái niệm thị trường lao động (Mục I - Trang 17 SGK), người lao động là bên bán, hàng hóa là sức lao động (thể lực và trí lực)." },
+            q2: { ans: "B", exp: "Giải thích: Sự phát triển nhanh chóng của khoa học, công nghệ tác động mạnh mẽ làm giảm cầu lao động chân tay và tăng yêu cầu kĩ năng cao đối với người lao động (Mục II - Trang 18 SGK)." },
+            q3: { ans: "B", exp: "Giải thích: Thị trường lao động đóng vai trò cung cấp thông tin thực tế giúp người học đối chiếu sở thích, năng lực để chọn nghề đúng đắn (Mục III - Trang 19-20 SGK)." },
+            q4: { ans: "C", exp: "Giải thích: Một trong những đặc điểm nổi bật của thị trường lao động Việt Nam hiện nay là xu hướng cung lớn hơn cầu, nhưng lại thiếu hụt lao động trình độ cao (Mục IV - Trang 20 SGK)." },
+            q5: { ans: "A", exp: "Giải thích: Việc đặt các câu hỏi tìm kiếm chi tiết để xác định rõ nhu cầu thông tin cần tìm thuộc Bước 1: Xác định mục tiêu tìm kiếm trong quy trình 4 bước (Mục V - Trang 22 SGK)." },
+            q6_a: { ans: "ĐÚNG", exp: "a) ĐÚNG — Công nghệ phát triển đòi hỏi nguồn nhân lực chất lượng cao, có năng lực chuyên môn và kĩ năng toàn diện." },
+            q6_b: { ans: "SAI", exp: "b) SAI — Công nghệ thay đổi liên tục, người lao động nếu không tự học và nâng cao kĩ năng sẽ dễ bị đào thải." },
+            q6_c: { ans: "ĐÚNG", exp: "c) ĐÚNG — Hiểu được nhu cầu xã hội giúp chọn nghề không bị lệch pha với thị trường." },
+            q6_d: { ans: "ĐÚNG", exp: "d) ĐÚNG — Đây là xu hướng tuyển dụng nổi bật hiện nay được ghi rõ trong chương trình SGK." }
+        };
+
+        // Chấm điểm
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            for (let key in answers) {
+                const selected = document.querySelector(`input[name="${key}"]:checked`);
+                const expDiv = document.getElementById(`explain-${key}`);
+                
+                expDiv.classList.remove('hidden');
+                expDiv.innerHTML = `<strong>Đáp án đúng: ${answers[key].ans}</strong><br>${answers[key].exp}`;
+
+                if (selected && selected.value === answers[key].ans) {
+                    score++;
+                }
+            }
+
+            // Hiển thị kết quả
+            const resultCard = document.getElementById('result-card');
+            const scoreText = document.getElementById('score-text');
+            const feedbackText = document.getElementById('feedback-text');
+
+            resultCard.classList.remove('hidden');
+            scoreText.innerText = `${score} / ${total}`;
+            
+            if (score === total) {
+                feedbackText.innerText = "Xuất sắc! Bạn đã nắm vững toàn bộ kiến thức Bài 3.";
+            } else if (score >= 6) {
+                feedbackText.innerText = "Khá tốt! Hãy đọc lại các câu giải thích để củng cố kiến thức nhé.";
+            } else {
+                feedbackText.innerText = "Bạn nên xem lại phần Kiến thức trọng tâm để ôn lại bài.";
+            }
+
+            // Scroll tới bảng kết quả
+            resultCard.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Reset
+        function resetQuiz() {
+            document.getElementById('quiz-form').reset();
+            for (let key in answers) {
+                const expDiv = document.getElementById(`explain-${key}`);
+                expDiv.classList.add('hidden');
+            }
+            document.getElementById('result-card').classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
+© 2026 Nhóm giáo viên: Đỗ Tấn Thạnh, Đoàn Thị Thủy Tiên. Mọi quyền được bảo lưu.
